@@ -6,7 +6,7 @@ let savedMovies = JSON.parse(localStorage.getItem("savedMovies"))
 
 async function getSavedMovies() {
     for (movie of savedMovies) {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=9c43412e&i=${movie}&type=movie`)
+        const response = await fetch(`https://www.omdbapi.com/?apikey=9c43412e&i=${movie}&type=movie`)
         const data = await response.json()
 
         console.log(data)
