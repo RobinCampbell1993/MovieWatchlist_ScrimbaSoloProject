@@ -18,7 +18,7 @@ function searchAPI() {
     const searchTerm = searchInput.value
     movieDataHtmlArray = []
 
-    fetch(`http://www.omdbapi.com/?apikey=9c43412e&s=${searchTerm}&type=movie`)
+    fetch(`https://www.omdbapi.com/?apikey=9c43412e&s=${searchTerm}&type=movie`)
         .then(res => {
             if (!res.ok) {
                 throw Error("Network error. Please try again later.")
@@ -72,7 +72,7 @@ function searchAPI() {
 
 async function fetchMovieData(data) {
     for (movie of data.Search) {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=9c43412e&i=${movie.imdbID}&type=movie`)
+        const response = await fetch(`https://www.omdbapi.com/?apikey=9c43412e&i=${movie.imdbID}&type=movie`)
         const data = await response.json()
 
         console.log(data)
