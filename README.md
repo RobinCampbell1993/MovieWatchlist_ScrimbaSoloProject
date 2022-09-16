@@ -11,6 +11,7 @@ Completed as part of the Scrimba Frontend Career Path - Module 9 (Working with A
 The key learnings for this project are:
 
   * Using an API (http://www.omdbapi.com/)
+  * Handling errors
   * Using async/await
 
 ---
