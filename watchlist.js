@@ -39,7 +39,7 @@ function renderMovies(data) {
             <div class="movie-item-info">
                 <div class="movie-container-title">
                     <h3 class="movie-title"><a target="_blank" href='https://www.imdb.com/title/${imdbID}'>${Title}</a></h3>
-                    <img src="/images/star-image.png">
+                    <img src="./images/star-image.png">
                     <p class="movie-rating">${imdbRating}</p>
                 </div>
 
@@ -47,7 +47,7 @@ function renderMovies(data) {
                     <p class="move-duration">${Runtime}</p>
                     <p class="movie-genre">${Genre}</p>
                     <div class="add-to-watchlist-container ${imdbID}" id="remove-from-watchlist-btn">
-                        <img class="add-to-watchlist-img" src="/images/minus-btn-image.png">
+                        <img class="add-to-watchlist-img" src="./images/minus-btn-image.png">
                         <p>Remove</p>
                     </div>
                 </div>
