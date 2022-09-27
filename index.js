@@ -80,7 +80,7 @@ async function fetchMovieData(data) {
 
         const html = `
         <div class="movie-container" id="${imdbID}">
-                <img class="movie-image" src="${Poster === "N/A" ? "/images/film-logo.png" : Poster}" alt="${Title} poster">
+                <img class="movie-image" src="${Poster === "N/A" ? "./images/film-logo.png" : Poster}" alt="${Title} poster">
                 <div class="movie-item-info">
                     <div class="movie-container-title">
                         <h3 class="movie-title"><a target="_blank" href='https://www.imdb.com/title/${imdbID}'>${Title}</a></h3>
@@ -92,7 +92,7 @@ async function fetchMovieData(data) {
                         <p class="move-duration">${Runtime}</p>
                         <p class="movie-genre">${Genre}</p>
                         <div class="add-to-watchlist-container ${imdbID}" id="add-to-watchlist-btn">
-                            <img class="add-to-watchlist-img" src="/images/plus-btn-image.png">
+                            <img class="add-to-watchlist-img" src="./images/plus-btn-image.png">
                             <p>Watchlist</p>
                         </div>
                     </div>
