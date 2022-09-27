@@ -84,7 +84,7 @@ async function fetchMovieData(data) {
                 <div class="movie-item-info">
                     <div class="movie-container-title">
                         <h3 class="movie-title"><a target="_blank" href='https://www.imdb.com/title/${imdbID}'>${Title}</a></h3>
-                        <img src="/images/star-image.png">
+                        <img src="./images/star-image.png">
                         <p class="movie-rating">${imdbRating}</p>
                     </div>
     
